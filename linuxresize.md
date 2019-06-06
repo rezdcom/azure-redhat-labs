@@ -6,7 +6,7 @@ Sometimes you run out of CPU power or disk space on your VM. Azure allows you to
 Find out the current VM disk size
 ----------------------------------
 
-At this point the VM must be running. If it's now, start it.
+At this point the VM must be running. If it's not, start it.
 
 ```
 $ az vm show -g LinuxResourceGroup  -n myLinuxVM  --query "[storageProfile.osDisk.diskSizeGb, storageProfile.osDisk.name, hardwareProfile.vmSize]"
